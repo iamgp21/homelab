@@ -1,14 +1,12 @@
 name: ArgoCD Deploy
 
 on:
+  workflow_dispatch:
+
   push:
     branches:
       - dev
-    paths:
-      - helm-values/**
   
-  workflow_dispatch:
-
 jobs:
   infra_scan:
     name: 'IaC Static Scan'
