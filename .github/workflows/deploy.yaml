@@ -10,7 +10,7 @@ on:
 jobs:
   infra_scan:
     name: 'IaC Static Scan'
-    runs-on: homelab
+    runs-on: ubuntu-latest
     # defaults:
     #   run:
     #     working-directory: ./infra
