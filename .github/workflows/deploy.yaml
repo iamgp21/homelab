@@ -37,11 +37,15 @@ jobs:
         output_path: 'infra_scan_results' # when provided with a directory on output_path it will generate the specified reports file named 'results.{extension}'
         platform_type: terraform
         output_formats: 'sarif'
-    
-    - name: Upload SARIF file
-      uses: github/codeql-action/upload-sarif@v3
-      with:
-        sarif_file: infra_scan_results/results.sarif
+
+    - name: Display Results
+      run: |
+        cat infra_scan_results/results.sarif
+
+    # - name: Upload SARIF file
+    #   uses: github/codeql-action/upload-sarif@v3
+    #   with:
+    #     sarif_file: infra_scan_results/results.sarif
     
   argocd_deploy:
     name: 'argocd deploy'
