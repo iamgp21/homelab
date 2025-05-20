@@ -5,7 +5,7 @@ on:
     branches:
       - dev
     paths:
-      - hem-values/**
+      - helm-values/**
   
   workflow_dispatch:
 
