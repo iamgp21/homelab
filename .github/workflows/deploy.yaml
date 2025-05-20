@@ -30,7 +30,7 @@ jobs:
       run: mkdir -p infra_scan_results
     
     - name: run kics Scan
-      uses: Checkmarx/kics-github-action@latest
+      uses: Checkmarx/kics-github-action@v2.1.5
       with:
         path: 'homelab' # path to the directory containing the terraform files
         ignore_on_exit: results #dont fail on results (overwrite default behaviour fails)
