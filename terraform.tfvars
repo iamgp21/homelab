@@ -9,7 +9,5 @@ argo_cd = {
     replace          = true
     force_update     = true
     upgrade_install  = true
-    values           = [ file("${path.root}/helm-values/argocd.yaml") ]
-    
   }
 }
