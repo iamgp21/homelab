@@ -5,6 +5,9 @@ resource "helm_release" "argo_cd" {
   namespace        = "argocd"
   create_namespace = true
   version          = "8.0.6"
+  replace = true
+  force_update = true
+  upgrade_install = true
   values = [
     file("${path.root}/helm-values/argocd.yaml")
   ]
