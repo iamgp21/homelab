@@ -48,7 +48,7 @@ jobs:
     # Generates an execution plan for Terraform
     - name: "Terraform Plan"
       id: plan
-      run: terraform plan  -var-file terraform.tfvars -input=false -lock=false -refresh=true -no-color
+      run: terraform plan  -var-file terraform.tfvars -input=false -lock=false  -no-color
 
     # Exit when plan failes
     - name: "Terraform Plan Status"
