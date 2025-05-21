@@ -58,4 +58,4 @@ jobs:
     - name: "Terraform Apply"
       id: apply
       if: github.event_name == 'push'
-      run: terraform apply -input=false -lock=false -refresh=true -auto-approve -no-color
+      run: terraform apply -input=false -lock=false -auto-approve -no-color
