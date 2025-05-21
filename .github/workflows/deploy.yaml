@@ -11,10 +11,6 @@ jobs:
   argocd_deploy:
     name: 'argocd deploy'
     runs-on: homelab
-    needs: infra_scan # Needs infra_scan job to be completed succussfully
-    # defaults:
-    #   run:
-    #     working-directory: ./
 
     permissions:
       contents: 'read'
