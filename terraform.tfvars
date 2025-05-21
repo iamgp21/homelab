@@ -6,8 +6,8 @@ argo_cd = {
     namespace        = "argocd"
     create_namespace = true
     version          = "8.0.6"
-    replace          = true
+    replace          = false
     force_update     = true
-    upgrade_install  = true
+    upgrade_install  = false
   }
 }

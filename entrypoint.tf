@@ -1,4 +1,4 @@
-# module "argocd" {
-#   source = "./modules/argocd"
-#   argo_cd = var.argo_cd
-# }
+module "argocd" {
+  source = "./modules/argocd"
+  argo_cd = var.argo_cd
+}
