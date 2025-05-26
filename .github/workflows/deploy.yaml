@@ -47,7 +47,7 @@ jobs:
     - name: "Terraform Initialize"
       id: init
       run: |
-        terraform init -reconfigure -input=false
+        terraform init -input=false
 
     # Generates an execution plan for Terraform
     - name: "Terraform Plan"
