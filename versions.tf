@@ -7,6 +7,6 @@ terraform {
     }
   }
   backend "local" {
-    path = "/mnt/c/Users/gaura/OneDrive/GITHUB/iamgp21/argocd.tfstate"
+    path = "/mnt/c/Users/gaura/OneDrive/GITHUB/iamgp21/TF_STATE/argocd.tfstate"
   }
 }
