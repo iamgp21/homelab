@@ -6,6 +6,10 @@ on:
   push:
     branches:
       - dev
+    paths:
+      - 'terraform.tfvars'
+      - 'helm-values/argocd.yaml'
+      - '.github/workflows/deploy.yaml'
   
 jobs:    
   argocd_deploy:
