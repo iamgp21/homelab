@@ -6,4 +6,7 @@ terraform {
       version = "2.17.0"
     }
   }
+  backend "local" {
+    path = "/mnt/c/Users/gaura/OneDrive/GITHUB/iamgp21/argocd.tfstate"
+  }
 }
