@@ -44,7 +44,7 @@ jobs:
       continue-on-error: false
     
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
-    - name: "Terraform Init"
+    - name: "Terraform Initialize"
       id: init
       run: |
         terraform init -input=false
