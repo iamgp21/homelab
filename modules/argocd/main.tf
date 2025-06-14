@@ -9,6 +9,9 @@ resource "helm_release" "argo_cd" {
   replace          = each.value.replace
   force_update     = each.value.force_update
   upgrade_install  = each.value.upgrade_install
-  values           = [ file("${path.root}/helm-values/argocd.yaml") ]
-  
+  values           = [ file("${path.root}/helm-values/argocd.yaml") ] 
+  set {
+    name  = "configs.secret.argocdServerAdminPassword"
+    value = var.argocd_admin_password
+  } 
 }
