@@ -8,6 +8,7 @@ on:
       - dev
     paths:
       - 'terraform.tfvars'
+      - 'entrypoint.tf'
       - 'helm-values/argocd.yaml'
       - '.github/workflows/deploy.yaml'
   
