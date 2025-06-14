@@ -12,3 +12,8 @@ variable "argo_cd" {
     }))
   
 }
+variable "argocd_admin_password" {
+  type        = string
+  description = "The admin password for ArgoCD"
+  sensitive = true
+}

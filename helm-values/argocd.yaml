@@ -3,7 +3,7 @@ server:
         type: NodePort
         nodePortHttp: 30070
 
-configs:
-    secret:
-        argocdServerAdminPassword: "$2a$10$Z.FywPf5lSirwU8.4ZuJV.EEbKSR0ZCP8JgsjMAPeDikYYQ3D7uum"
+# configs:
+#     secret:
+#         argocdServerAdminPassword: "$2a$10$Z.FywPf5lSirwU8.4ZuJV.EEbKSR0ZCP8JgsjMAPeDikYYQ3D7uum"
         

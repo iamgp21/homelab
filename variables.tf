@@ -11,3 +11,9 @@ variable "argo_cd" {
         upgrade_install = bool
     })) 
 }
+
+variable "argocd_admin_password" {
+  type        = string
+  description = "The admin password for ArgoCD"
+  sensitive = true
+}

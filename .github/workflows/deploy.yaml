@@ -11,6 +11,10 @@ on:
       - 'helm-values/argocd.yaml'
       - '.github/workflows/deploy.yaml'
   
+env:
+  # Set the ArgoCD admin password
+  TF_VAR_argocd_admin_password: ${{ secrets.ARGOCD_ADMIN_PASSWORD }}
+
 jobs:    
   argocd_deploy:
     name: 'argocd deploy'
